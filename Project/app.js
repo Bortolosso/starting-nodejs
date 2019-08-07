@@ -9,7 +9,6 @@ const path = require("path")//Modulo padrão do Node, modulo responsavel por man
 const session = require("express-session");
 const flash = require("connect-flash"); // O "flash" é um tipo de sessão que aparece apena uma vez. Ao atualizar a pagina a mensagem desaparece
 
-
 //Config
     //Sessions
         app.use(session({
@@ -58,7 +57,7 @@ const flash = require("connect-flash"); // O "flash" é um tipo de sessão que a
     app.use("/admin", urlencodedParse, admin);
 
 //Others 
-const PORT = 8089;
+const PORT = 8081;
 app.listen(PORT, () => {
-    console.log("Server it's running in http://localhost:8089");
+    console.log("Server it's running in http://localhost:8081");
 });
